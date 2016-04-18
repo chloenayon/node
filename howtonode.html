@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+</head>
+<body>
+  <ul>
+    <li>NODE</li>
+<!--    <li>By Chloe Kaubisch and Samuel Zhang</li> -->
+  </ul>
+  <div style="height:100px; float:left; margin: 20px; width:20%;">
+    <img src="http://nodejsblog.com/wp-content/uploads/2015/05/ryan_dahl.jpg" width="230" height="160">
+  </div>
+  <div class="white" style="height:200px; width:75%">
+    <br>
+    <br>
+    <br>
+    Node was originally written in 2009 by Ryan Dahl. It's written in C and C++, implements V8 (a Javascript execution engine created for Google Chrome), and uses Javascript syntax. 
+  </div>
+  <div class="white" style="float:right; height:200px; width: 20%">
+    <img src="https://node-arm.herokuapp.com/images/nodejs.png" width="230" height="180">
+  </div>
+  <div class="white" style="float:left; width:70%; margin: 20px; height:200px;">
+    <br>
+    <br>
+    It is an open source, event-driven, asynchronous, non-blocking environment best used for developing dynamic, real-time server-side application. 
+  </div>
+  <br>
+  <div class="white" style="height:200px; width:60%; float:right;">
+    <br>
+    Asynchronous and non-blocking mean the same thing. A synchronous operation blocks a process until the entire operation is complete. But an asynchronous operation merely initiates the process. Node.js implements a callback method in which a single thread is used as various events trigger requests. Instead of waiting for the single operation to complete, which could drain time and efficiency, Node can process a high number of requests without waiting for a function to return a result.
+  </div>
+  <div style="height:100px; float:left; margin: 30px; width:20%;">
+    <img src="http://i.stack.imgur.com/BTm1H.png" width="350" height="150">
+  </div>
+  <br>
+  <br>
+  <div class="black" style="width:45%; height:150px; float: left;">
+    <center>PROS</center>
+    <ul style="font-size: 20px; padding: 10px;">
+      <li> dynamic and efficient </li>
+      <li> highly scalable </li>
+      <li> very fast </li>
+      <li> same code shared with both server and client side </li>
+    </ul>
+  </div>
+  <div class="black" style="width:50%; height:150px; float:right;">
+    
+    <center>CONS</center>
+     <ul style="font-size: 20px; padding: 10px;">
+      <li> unsuited for CPU-intensive tasks </li>
+      <li> relatively new, still in development </li>
+      <li> incompatible with relational databases</li>
+    </ul>
+  </div>
+  <br>
+  <div class="black" style="width:50% float:left; padding:10px;">
+    <center>
+      EXAMPLE: SIMPLE SERVER
+    </center>
+    <p style="color: #ccffff;">
+    var http = require('http');<br>
+
+    http.createServer(function (req, res) { <br>
+     
+       res.writeHead(200, {'Content-Type': 'text/plain'});<br>
+       res.end('Hello World\n'); <br>
+    }).listen(8000);
+    </p>
+  </div>
+  <div class="white" style="width:45%; float:right;">
+    <br>
+    <br>
+    <br>
+    <- creates server and request handler <br>
+    <- sets status code and writes headers<br>
+    <- writes actual content<br>
+    <- runs on port 8000
+  </div>
+</body>
+<style>
+  ul {
+  list-style-type:none;
+  margin: 10px;
+<!--  width: 190px;-->
+  padding: 0px;
+  font-size: 60px;
+  border-radius: 5px;
+  font-family: "Georgia", serif;
+  background-color: #000000;
+  }
+
+  li{
+  color: #ffffff;
+  }
+
+  div{
+  margin: 10px;
+  width: 50%;
+  border-radius: 5px;
+  float: left;
+  font-family: "Georgia", serif;
+  font-size: 20px;
+  }
+
+  .white{
+  color: #000000;
+  background-color: #ffffff;
+  }
+
+  .black{
+  color: #ffffff;
+  background-color: #000000; 
+  }
+
+</style>
+</html>
